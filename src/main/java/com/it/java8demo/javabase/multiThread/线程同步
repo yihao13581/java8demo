@@ -1,0 +1,13 @@
+        线程同步：  同步代码块：用synchronized将run()方法里面的方法体修改为同步代码块。synchronized（）{}；
+                    同步方法：使用synchronized关键字来修饰某个方法，该方法称为同步方法。
+
+        同步锁：通过显示定义同步锁对象来实现同步，同步锁由Lock对象充当。
+
+        使用Condition控制线程通信：如果程序不使用synchronized关键字来保证同步，而是直接使用Lock对象来保证同步，
+    则系统中不存在隐式的同步监视器，也就不能使用wait()、notify()、notifyAll()方法进行线程通信了。Lock替代了同步方法
+    或者同步代码块，Condition替代了同步监视器的功能。要获得特定Lock实例得Condition实例，调用Lock对象的newCondition()
+    方法即可。Condition类提供了如下三个方法：
+           await():类似于隐式同步监视器上的wait方法，导致当前线程等待，直到其它线程调用该condition的signal()或者
+    signalAll()方法来唤醒该线程。
+           signal():唤醒在此Lock对象上等待的单个线程。选择是随意的。
+           signalAll():唤醒在此Lock对象上等待的所有线程。

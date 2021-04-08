@@ -1,0 +1,16 @@
+    Java5开始，在java.net包下提供了Proxy和ProxySelector两个类，其中Proxy代表一个代理服务器。可以在打开
+URLConnection连接时指定Proxy，创建Socket连接时也可以指定Proxy；ProxySelector代表一个代理选择器，提供
+对代理服务器更加灵活的控制。
+    代理服务器的两个主要功能：1、突破自身IP限制，对外隐藏自身IP地址。突破IP限制包括访问国外受限站点，访问国内
+特定单位、团体的内部资源。2、提高访问速度，代理服务器提供的缓冲功能可以避免每个用户都直接访问远程主机，从而提高
+客户端访问速度。
+    Proxy有一个构造器：Proxy(Proxy.Type type,SocketAddress sa)用来创建Proxy对象，其中sa参数指定
+代理服务器的地址，type表示该代理服务器的类型，该类型有如下三种：Proxy.Type.DIRECT:表示直接连接，
+不使用代理；Proxy.Type.HTTP:表示支持高级协议代理，如HTTP或FTP；Proxy.Type.SOCKS:表示SOCKS(V4或V5)代理。
+
+      ProxySelector代表一个代理选择器，本身是一个抽象类，程序无法创建它的实例，可以考虑继承ProxySelector
+  来实现自己的代理选择器。实现ProxySelector步骤：定义一个继承ProxySelector的类，并让该类实现如下两个抽象
+  方法：1、List<Proxy> select(URI uri):根据业务需要返回代理服务器列表，如果该方法返回的集合中只包含一个Peoxy
+  则该Proxy将做为默认的代理服务器。2、connectFailed(URI uri,SocketAddress sa,IOException ioe):连接服务器失败的
+  回调方法。
+

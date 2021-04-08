@@ -1,0 +1,2 @@
+普通字符串
+com.it.java8demo.javabase.io.PrintStreamTest@30dae81

@@ -1,0 +1,17 @@
+使用阻塞队列（BlockingQueue）控制线程通信：
+        BlockingQueue是Queue的子接口，它的主要用途并不是作为容器，而是作为同步的工具。BlockingQueue具有一个特征：
+  当生产者线程试图向BlockingQueue中放入元素是，如果队列已满，则该线程被阻塞；当消费者线程试图从BlockingQueue中
+  取出元素时，如果该队列已空，则该线程被阻塞。
+        BlockingQueue提供两个支持阻塞的方法：
+        ☆☆  put(E e):尝试把E元素放入BlockingQueue中，如果该队列的元素已满，则阻塞该线程。
+        ☆☆  take():尝试从BlockingQueue的头部取出元素，如果该队列的元素已空，则阻塞该线程。
+
+        BlockingQueue包含如下5个实现类：
+                ArrayBlockingQueue:基于数组实现的BlockingQueue队列。
+                LinkedBlockingQueue：基于链表实现的BlockingQueue队列。
+                PriorityBlockingQueue：并非标准阻塞队列。该队列调用remove()、poll()、take()等方法取出元素时，并不是
+        取出队列中存在时间最长的元素，而是队列中最小的元素。PriorityBlockingQueue判断元素的大小可根据元素（实现Comparable接口）的
+        本身大小来自然排序。
+                SynchronousQueue:同步队列。对该队列的存、取操作必须交通进行。
+                DelayQueue：它时一个特殊的BlockingQueue，底层基于PriorityBlockingQueue。不过DelayQueue要求元素集合都实现
+            Delay接口，DelayQueue根据集合元素的getDelay()方法的返回值进行排序。
