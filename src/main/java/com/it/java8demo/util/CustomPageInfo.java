@@ -8,7 +8,7 @@ import java.util.List;
 
 /**
  * @CLassName PageInfo
- * @Description: TODO
+ * @Description: 分页util,不经过mybatis
  * @date: 2021/1/6 19:53
  * @Version 1.0
  */
