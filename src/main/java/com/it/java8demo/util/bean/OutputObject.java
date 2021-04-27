@@ -85,7 +85,7 @@ public class OutputObject implements Serializable {
         return beans;
     }
 
-    public void setBeans(List<Map<String, String>> beans) {
+    public  void setBeans(List<Map<String, String>> beans) {
         this.beans = beans;
     }
 

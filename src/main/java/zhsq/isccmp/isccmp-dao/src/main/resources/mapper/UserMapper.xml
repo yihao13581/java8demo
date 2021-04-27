@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.cmos.isccmp.dao.UserDAO">
+
+    <resultMap id="BaseResultMap" type="com.cmos.isccmp.beans.UserDO">
+
+        <id column="user_id" jdbcType="BIGINT" property="userId"/>
+        <result column="user_acct" jdbcType="VARCHAR" property="userAcct"/>
+        <result column="user_pwd" jdbcType="VARCHAR" property="userPwd"/>
+        <result column="realname" jdbcType="VARCHAR" property="realname"/>
+        <result column="mobile" jdbcType="VARCHAR" property="mobile"/>
+        <result column="email" jdbcType="VARCHAR" property="email"/>
+        <result column="gender" jdbcType="TINYINT" property="gender"/>
+        <result column="avatar" jdbcType="VARCHAR" property="avatar"/>
+        <result column="org_id" jdbcType="BIGINT" property="orgId"/>
+        <result column="user_type" jdbcType="VARCHAR" property="userType"/>
+        <result column="password_update_time" jdbcType="VARCHAR" property="passwordUpdateTime"/>
+        <result column="name_initial" jdbcType="VARCHAR" property="nameInitial"/>
+        <result column="last_loginTime" jdbcType="TIMESTAMP" property="lastLoginTime"/>
+        <result column="login_count" jdbcType="INTEGER" property="loginCount"/>
+        <result column="im_pwd" jdbcType="VARCHAR" property="imPwd"/>
+        <result column="remark" jdbcType="VARCHAR" property="remark"/>
+        <result column="vila_flag" jdbcType="CHAR" property="vildFlag"/>
+        <result column="create_time" jdbcType="TIMESTAMP" property="createTime"/>
+        <result column="update_time" jdbcType="TIMESTAMP" property="updateTime"/>
+        <result column="creator" jdbcType="VARCHAR" property="creator"/>
+        <result column="updater" jdbcType="VARCHAR" property="updater"/>
+        <result column="sys_id" jdbcType="VARCHAR" property="sysId"/>
+        <result column="expire_date" jdbcType="TIMESTAMP" property="expireDate"/>
+    </resultMap>
+    <sql id="Base_Column_List">
+       user_id,user_acct,user_pwd,realname,id_card,mobile,email,gender,avatar,org_id,
+       user_type,password_update_time,name_initial,last_login_time,login_count,im_pwd,
+       remark,vild_flag,create_time,update_time,creator,updater,sys_id,expire_date
+   </sql>
+    <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List"/>
+        from t_isccmp_user
+        where user_id=#{userId,jdbcType=BIGINT}
+    </select>
+
+    <insert id="insertSelective" parameterType="com.cmos.isccmp.beans.UserDO">
+        insert into t_isccmp_user
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="userId !=null">
+                user_id,
+            </if>
+            <if test="userAcct !=null">
+                user_acct,
+            </if>
+            <if test="userPwd ! = null">
+                user_pwd,
+            </if>
+            <if test="realname != null">
+                realname,
+            </if>
+            <if test="idCard !=null">
+                id_card,
+            </if>
+            <if test="mobile != null">
+                mobile,
+            </if>
+            <if test="email != null">
+                email,
+            </if>
+
+            <if test="gender != null">
+                gender,
+            </if>
+            <if test="avatar != null">
+                avatar,
+            </if>
+            <if test="orgId != null">
+                org_id,
+            </if>
+            <if test="userType != null">
+                user_type,
+            </if>
+            <if test="passwordUpdateTime != null">
+                password_update_time,
+            </if>
+            <if test="nameInitial != null">
+                name_initial,
+            </if>
+            <if test="lastLoginTime != null">
+                last_login_time,
+            </if>
+            <if test="loginCount != null">
+                login_count,
+            </if>
+            <if test="imPwd != null">
+                im_pwd,
+            </if>
+            <if test="remark != null">
+                remark,
+            </if>
+            <if test="vildFlag != null">
+                vild_flag,
+            </if>
+            <if test="createTime != null">
+                create_time,
+            </if>
+            <if test="updateTime != null">
+                update_time,
+            </if>
+            <if test="creator != null">
+                creator,
+            </if>
+            <if test="updater != null">
+                updater,
+            </if>
+            <if test="sysId != null">
+                sys_id,
+            </if>
+            <if test="expireDate != null">
+                expire_date,
+            </if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="userId ！= null">
+                #{userId,jdbcType=BIGINT},
+            </if>
+            <if test="userAcct ！= null">
+                #{userAcct,jdbcType=VARCHAR},
+            </if>
+            <if test="userPwd ！= null">
+                #{userPwd,jdbcType=BIGINT},
+            </if>
+            <if test="realname ！= null">
+                #{realname,jdbcType=VARCHAR},
+            </if>
+            <if test="idCard ！= null">
+                #{idCard,jdbcType=VARCHAR},
+            </if>
+            <if test="mobile ！= null">
+                #{mobile,jdbcType=VARCHAR},
+            </if>
+            <if test="email ！= null">
+                #{email,jdbcType=VARCHAR},
+            </if>
+            <if test="gender ！= null">
+                #{gender,jdbcType=TINYINT},
+            </if>
+            <if test="avatar ！= null">
+                #{avatar,jdbcType=VARCHAR},
+            </if>
+            <if test="orgId ！= null">
+                #{orgId,jdbcType=BIGINT},
+            </if>
+            <if test="userType ！= null">
+                #{userType,jdbcType=VARCHAR},
+            </if>
+            <if test="passwordUpdateTime ！= null">
+                #{passwordUpdateTime,jdbcType=TIMESTAMP},
+            </if>
+            <if test="nameInitial ！= null">
+                #{nameInitial,jdbcType=VARCHAR},
+            </if>
+            <if test="lastLoginTime ！= null">
+                #{lastLoginTime,jdbcType=TIMESTAMP},
+            </if>
+            <if test="loginCount ！= null">
+                #{loginCount,jdbcType=INTEGER},
+            </if>
+            <if test="imPwd ！= null">
+                #{imPwd,jdbcType=VARCHAR},
+            </if>
+            <if test="remark ！= null">
+                #{remark,jdbcType=VARCHAR},
+            </if>
+            <if test="vildFlag ！= null">
+                #{vildFlag,jdbcType=VARCHAR},
+            </if>
+            <if test="createTime ！= null">
+                #{createTime,jdbcType=TIMESTAMP},
+            </if>
+            <if test="updateTime ！= null">
+                #{updateTime,jdbcType=TIMESTAMP},
+            </if>
+            <if test="creator ！= null">
+                #{creator,jdbcType=VARCHAR},
+            </if>
+            <if test="updater ！= null">
+                #{updater,jdbcType=VARCHAR},
+            </if>
+            <if test="sysId ！= null">
+                #{sysId,jdbcType=VARCHAR},
+            </if>
+            <if test="expireTime ！= null">
+                #{expireTime,jdbcType=TIMESTAMP},
+            </if>
+        </trim>
+    </insert>
+
+    <update id="updateByPrimaryKeySelective" parameterType="com.cmos.isccmp.beans.UserDO">
+        update t_isccmp_user
+        <set>
+            <if test="userAcct ！= null">
+                user_acct= #{userAcct,jdbcType=VARCHAR},
+            </if>
+            <if test="userPwd ！= null">
+                user_pwd= #{userPwd,jdbcType=BIGINT},
+            </if>
+            <if test="realname ！= null">
+                realname= #{realname,jdbcType=VARCHAR},
+            </if>
+            <if test="idCard ！= null">
+                id_card=#{idCard,jdbcType=VARCHAR},
+            </if>
+            <if test="mobile ！= null">
+                mobile=#{mobile,jdbcType=VARCHAR},
+            </if>
+            <if test="email ！= null">
+                email=#{email,jdbcType=VARCHAR},
+            </if>
+            <if test="gender ！= null">
+                gender= #{gender,jdbcType=TINYINT},
+            </if>
+            <if test="avatar ！= null">
+                avatar= #{avatar,jdbcType=VARCHAR},
+            </if>
+            <if test="orgId ！= null">
+                org_id=#{orgId,jdbcType=BIGINT},
+            </if>
+            <if test="userType ！= null">
+                user_type=#{userType,jdbcType=VARCHAR},
+            </if>
+            <if test="passwordUpdateTime ！= null">
+                password_update_time=#{passwordUpdateTime,jdbcType=TIMESTAMP},
+            </if>
+            <if test="nameInitial ！= null">
+                name_initial=#{nameInitial,jdbcType=VARCHAR},
+            </if>
+            <if test="lastLoginTime ！= null">
+                last_login_time=#{lastLoginTime,jdbcType=TIMESTAMP},
+            </if>
+            <if test="loginCount ！= null">
+                login_count=#{loginCount,jdbcType=INTEGER},
+            </if>
+            <if test="imPwd ！= null">
+                im_pwd=#{imPwd,jdbcType=VARCHAR},
+            </if>
+            <if test="remark ！= null">
+                remark=#{remark,jdbcType=VARCHAR},
+            </if>
+            <if test="vildFlag ！= null">
+                vild_flag=#{vildFlag,jdbcType=VARCHAR},
+            </if>
+            <if test="createTime ！= null">
+                create_time=#{createTime,jdbcType=TIMESTAMP},
+            </if>
+            <if test="updateTime ！= null">
+                update_time=#{updateTime,jdbcType=TIMESTAMP},
+            </if>
+            <if test="creator ！= null">
+                creator=#{creator,jdbcType=VARCHAR},
+            </if>
+            <if test="updater ！= null">
+                updater= #{updater,jdbcType=VARCHAR},
+            </if>
+            <if test="sysId ！= null">
+                sys_id=#{sysId,jdbcType=VARCHAR},
+            </if>
+            <if test="expireTime ！= null">
+                expire_time= #{expireTime,jdbcType=TIMESTAMP},
+            </if>
+        </set>
+        where user_id=#{userId,jdbcType=BIGINT}
+        <if test="parentOrgId != null">
+            and org_id in (select org.org_id from t_isccmp_org org where org.parent_id=#{parentOrgId,jdbcType=BININT})
+        </if>
+    </update>
+
+    <select id="selectByUserSelective" parameterType="com.cmos.isccmp.beans.UserDO" resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List"/>
+        from t_isccmp_user
+        where
+        vild_flag in('1','2')
+        <if test="userId !=null">
+            and user_id=#{userId,jdbcType=BIGINT}
+        </if>
+        <if test="userAcct !=null">
+            and user_acct=#{userAcct,jdbcType=VARCHAR}
+        </if>
+        <if test="userPwd !=null">
+            and user_pwd=#{userPwd,jdbcType=VARCHAR}
+        </if>
+        <if test="realname !=null">
+            and realname=#{realname,jdbcType=VARCHAR}
+        </if>
+        <if test="idCard !=null">
+            and id_card=#{idCard,jdbcType=VARCHAR}
+        </if>
+        <if test="mobile !=null">
+            and mobile=#{mobile,jdbcType=VARCHAR}
+        </if>
+        <if test="email !=null">
+            and email=#{email,jdbcType=VARCHAR}
+        </if>
+        <if test="gender !=null">
+            and gender=#{gender,jdbcType=TINYINT}
+        </if>
+        <if test="avatar !=null">
+            and avatar=#{avatar,jdbcType=VARCHAR}
+        </if>
+        <if test="orgId !=null">
+            and org_id=#{orgId,jdbcType=BIGINT}
+        </if>
+        <if test="userType !=null">
+            and user_type=#{userType,jdbcType=VARCHAR}
+        </if>
+        <if test="passwordUpdateTime !=null">
+            and password_update_time=#{passwordUpdateTime,jdbcType=VARCHAR}
+        </if>
+        <if test="nameInitial !=null">
+            and name_initial=#{nameInitial,jdbcType=VARCHAR}
+        </if>
+        <if test="lastLoginTime !=null">
+            and last_login_time=#{lastLoginTime,jdbcType=TIMESTAMP}
+        </if>
+        <if test="loginCount !=null">
+            and login_count=#{loginCount,jdbcType=INTEGER}
+        </if>
+        <if test="imPwd !=null">
+            and im_pwd=#{imPwd,jdbcType=VARCHAR}
+        </if>
+        <if test="remark !=null">
+            and remark=#{remark,jdbcType=VARCHAR}
+        </if>
+        <if test="vildFlag !=null">
+            and vild_flag=#{vildFlag,jdbcType=VARCHAR}
+        </if>
+        <if test="createTime !=null">
+            and create_time=#{createTime,jdbcType=TIMESTAMP}
+        </if>
+        <if test="updateTime !=null">
+            and update_time=#{updateTime,jdbcType=TIMESTAMP}
+        </if>
+        <if test="creator !=null">
+            and creator=#{creator,jdbcType=VARCHAR}
+        </if>
+        <if test="updater !=null">
+            and updater=#{updater,jdbcType=VARCHAR}
+        </if>
+        <if test="sysId !=null">
+            and sys_id=#{sysId,jdbcType=VARCHAR}
+        </if>
+        <if test="expireTime !=null">
+            and expire_time=#{expireTime,jdbcType=TIMESTAMP}
+        </if>
+        <if test="parentOrgId !=null">
+           and org_id in(select org.org_id from t_isccmp_org org where org.parent_id=#{parentOrgId,jdbcType=BIGINT})
+        </if>
+    </select>
+    <update id="deleteUsers" parameterType="java.util.List">
+        update t_isccmp_user set vild_flag =0 where user_id in
+        <foreach item="item" index="index" collection="userIds" open="(" separator="," close=")">
+            #{item}
+        </foreach>
+        <if test="parentOrgId != null">
+            and org_id in (select org.org_id from t_isccmp_org org where org.parent_id=#{parentOrgId,jdbcType=BININT})
+        </if>
+    </update>
+    <select id="getDetail" resultType="java.util.HashMap">
+        select
+        cmp_user.user_id as userId,
+        cmp_user.user_acct as userAcct,
+        cmp_user.realname,
+        cmp_user.id_card as idCard,
+        cmp_user.mobile,
+        cmp_user.gender,
+        cmp_user.vild_flag as vildFlag,
+        creator.user_acct as creatoe,
+        DATA_FORMAT(cmp_user.create_time,'%Y-%m-%d %H:%i:%s') as createTime,
+        updater.user-acct as updater,
+        case when cmp_user.updater is null then null else DATE_FORMAT(cmp_user.update_time,'%Y-%m-%d %H:%i:%s') end as
+        updateTime
+        from t_isccmp_user cmp_user
+        left join t_isccmp_user creator on creator.user_id=cmp_user.creator
+        left join t_isccmp_user updater on updater.user_id=cmp_user.updater
+        where cmp_user.user_id=#{userId,jdbcType=BIGINT}
+        <if test="parentOrgId != null">
+            and org_id in (select org.org_id from t_isccmp_org org where org.parent_id=#{parentOrgId,jdbcType=BININT})
+        </if>
+    </select>
+
+    <select id="selectEnabledUserByOrgIds" parameterType="java.util.List" resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List"/>
+        from t_isccmp_user
+        where
+        vild_flag="1"
+        and org_id in
+        <foreach collection="orgIds" item="orgId" index="index" open="(" separator="," close=")">
+            #{orgId}
+        </foreach>
+    </select>
+
+    <select id="getUserByRnameAndMobile" parameterType="com.cmos.isccmp.beans.UserDO" resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List"/>
+        from t_isccmp_user
+        where
+        vild_flag in ('1','2')
+        <if test="realname !=null and realname!='' ">
+            and realname=#{realname,jdbcType=VARCHAR}
+        </if>
+        <if test="mobile !=null and mobile!='' ">
+            and mobile=#{mobile,jdbcType=VARCHAR}
+        </if>
+    </select>
+
+    <select id="getUserByOrgIdRnameAndMobile" parameterType="com.cmos.isccmp.beans.UserDO" resultMap="BaseResultMap">
+        select cmp_user.*
+        from t_isccmp_user cmp_user
+        inner join t_isccmp_org cmp_org on cmp_org.org_id=cmp_user.org_id
+        and (cmp_org.org_id=#{orgId,jdbcType=BIGINT} or cmp_org.parent_id=#{oegId,jdbcType=BIGINT})
+        where
+        cmp_user.vild_flag in ('1','2')
+        <if test="realname !=null and realname!='' ">
+            and realname=#{realname,jdbcType=VARCHAR}
+        </if>
+        <if test="mobile !=null and mobile!='' ">
+            and mobile=#{mobile,jdbcType=VARCHAR}
+        </if>
+    </select>
+
+</mapper>

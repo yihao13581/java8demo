@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.cmos.scrs.dao.satisfaction.SatisfactionReportMapper" >
+  <resultMap id="BaseResultMap" type="com.cmos.scrs.beans.satisfaction.SatisfactionReport" >
+    <id column="row_id" property="rowId" jdbcType="VARCHAR" />
+    <result column="startTime" property="starttime" jdbcType="TIMESTAMP" />
+    <result column="endTime" property="endtime" jdbcType="TIMESTAMP" />
+    <result column="tennat_id" property="tennatId" jdbcType="VARCHAR" />
+    <result column="agent_id" property="agentId" jdbcType="VARCHAR" />
+    <result column="agent_name" property="agentName" jdbcType="VARCHAR" />
+    <result column="agent_code" property="agentCode" jdbcType="VARCHAR" />
+    <result column="call_type" property="callType" jdbcType="INTEGER" />
+    <result column="org_name" property="orgName" jdbcType="VARCHAR" />
+    <result column="call_in_num" property="callInNum" jdbcType="INTEGER" />
+    <result column="call_out_num" property="callOutNum" jdbcType="INTEGER" />
+    <result column="participate_in_num" property="participateInNum" jdbcType="INTEGER" />
+    <result column="relative_statisfaction_num" property="relativeStatisfactionNum" jdbcType="INTEGER" />
+    <result column="relative_no_statisfaction_num" property="relativeNoStatisfactionNum" jdbcType="INTEGER" />
+    <result column="very_statisfaction_num" property="veryStatisfactionNum" jdbcType="INTEGER" />
+    <result column="statisfaction_num" property="statisfactionNum" jdbcType="INTEGER" />
+    <result column="general_statisfaction_num" property="generalStatisfactionNum" jdbcType="INTEGER" />
+    <result column="no_statisfaction_num" property="noStatisfactionNum" jdbcType="INTEGER" />
+    <result column="very_no_statisfaction_num" property="veryNoStatisfactionNum" jdbcType="INTEGER" />
+    <result column="create_time" property="createTime" jdbcType="TIMESTAMP" />
+    <result column="create_day" property="createDay" jdbcType="VARCHAR" />
+    <result column="state" property="state" jdbcType="INTEGER" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    row_id, startTime, endTime, tennat_id, agent_id, agent_name, agent_code, call_type, 
+    org_name, call_in_num, call_out_num, participate_in_num, relative_statisfaction_num, 
+    relative_no_statisfaction_num, very_statisfaction_num, statisfaction_num, general_statisfaction_num, 
+    no_statisfaction_num, very_no_statisfaction_num, create_time, create_day, state
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.String" >
+    select 
+    <include refid="Base_Column_List" />
+    from scrs_satisfaction_report
+    where row_id = #{rowId,jdbcType=VARCHAR}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.String" >
+    delete from scrs_satisfaction_report
+    where row_id = #{rowId,jdbcType=VARCHAR}
+  </delete>
+  <insert id="insert" parameterType="com.cmos.scrs.beans.satisfaction.SatisfactionReport" >
+    insert into scrs_satisfaction_report (row_id, startTime, endTime, 
+      tennat_id, agent_id, agent_name, 
+      agent_code, call_type, org_name, 
+      call_in_num, call_out_num, participate_in_num, 
+      relative_statisfaction_num, relative_no_statisfaction_num, 
+      very_statisfaction_num, statisfaction_num, 
+      general_statisfaction_num, no_statisfaction_num, 
+      very_no_statisfaction_num, create_time, create_day, 
+      state)
+    values (#{rowId,jdbcType=VARCHAR}, #{starttime,jdbcType=TIMESTAMP}, #{endtime,jdbcType=TIMESTAMP}, 
+      #{tennatId,jdbcType=VARCHAR}, #{agentId,jdbcType=VARCHAR}, #{agentName,jdbcType=VARCHAR}, 
+      #{agentCode,jdbcType=VARCHAR}, #{callType,jdbcType=INTEGER}, #{orgName,jdbcType=VARCHAR}, 
+      #{callInNum,jdbcType=INTEGER}, #{callOutNum,jdbcType=INTEGER}, #{participateInNum,jdbcType=INTEGER}, 
+      #{relativeStatisfactionNum,jdbcType=INTEGER}, #{relativeNoStatisfactionNum,jdbcType=INTEGER}, 
+      #{veryStatisfactionNum,jdbcType=INTEGER}, #{statisfactionNum,jdbcType=INTEGER}, 
+      #{generalStatisfactionNum,jdbcType=INTEGER}, #{noStatisfactionNum,jdbcType=INTEGER}, 
+      #{veryNoStatisfactionNum,jdbcType=INTEGER}, #{createTime,jdbcType=TIMESTAMP}, #{createDay,jdbcType=VARCHAR}, 
+      #{state,jdbcType=INTEGER})
+  </insert>
+  <insert id="insertSelective" parameterType="com.cmos.scrs.beans.satisfaction.SatisfactionReport" >
+    insert into scrs_satisfaction_report
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="rowId != null" >
+        row_id,
+      </if>
+      <if test="starttime != null" >
+        startTime,
+      </if>
+      <if test="endtime != null" >
+        endTime,
+      </if>
+      <if test="tennatId != null" >
+        tennat_id,
+      </if>
+      <if test="agentId != null" >
+        agent_id,
+      </if>
+      <if test="agentName != null" >
+        agent_name,
+      </if>
+      <if test="agentCode != null" >
+        agent_code,
+      </if>
+      <if test="callType != null" >
+        call_type,
+      </if>
+      <if test="orgName != null" >
+        org_name,
+      </if>
+      <if test="callInNum != null" >
+        call_in_num,
+      </if>
+      <if test="callOutNum != null" >
+        call_out_num,
+      </if>
+      <if test="participateInNum != null" >
+        participate_in_num,
+      </if>
+      <if test="relativeStatisfactionNum != null" >
+        relative_statisfaction_num,
+      </if>
+      <if test="relativeNoStatisfactionNum != null" >
+        relative_no_statisfaction_num,
+      </if>
+      <if test="veryStatisfactionNum != null" >
+        very_statisfaction_num,
+      </if>
+      <if test="statisfactionNum != null" >
+        statisfaction_num,
+      </if>
+      <if test="generalStatisfactionNum != null" >
+        general_statisfaction_num,
+      </if>
+      <if test="noStatisfactionNum != null" >
+        no_statisfaction_num,
+      </if>
+      <if test="veryNoStatisfactionNum != null" >
+        very_no_statisfaction_num,
+      </if>
+      <if test="createTime != null" >
+        create_time,
+      </if>
+      <if test="createDay != null" >
+        create_day,
+      </if>
+      <if test="state != null" >
+        state,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="rowId != null" >
+        #{rowId,jdbcType=VARCHAR},
+      </if>
+      <if test="starttime != null" >
+        #{starttime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="endtime != null" >
+        #{endtime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="tennatId != null" >
+        #{tennatId,jdbcType=VARCHAR},
+      </if>
+      <if test="agentId != null" >
+        #{agentId,jdbcType=VARCHAR},
+      </if>
+      <if test="agentName != null" >
+        #{agentName,jdbcType=VARCHAR},
+      </if>
+      <if test="agentCode != null" >
+        #{agentCode,jdbcType=VARCHAR},
+      </if>
+      <if test="callType != null" >
+        #{callType,jdbcType=INTEGER},
+      </if>
+      <if test="orgName != null" >
+        #{orgName,jdbcType=VARCHAR},
+      </if>
+      <if test="callInNum != null" >
+        #{callInNum,jdbcType=INTEGER},
+      </if>
+      <if test="callOutNum != null" >
+        #{callOutNum,jdbcType=INTEGER},
+      </if>
+      <if test="participateInNum != null" >
+        #{participateInNum,jdbcType=INTEGER},
+      </if>
+      <if test="relativeStatisfactionNum != null" >
+        #{relativeStatisfactionNum,jdbcType=INTEGER},
+      </if>
+      <if test="relativeNoStatisfactionNum != null" >
+        #{relativeNoStatisfactionNum,jdbcType=INTEGER},
+      </if>
+      <if test="veryStatisfactionNum != null" >
+        #{veryStatisfactionNum,jdbcType=INTEGER},
+      </if>
+      <if test="statisfactionNum != null" >
+        #{statisfactionNum,jdbcType=INTEGER},
+      </if>
+      <if test="generalStatisfactionNum != null" >
+        #{generalStatisfactionNum,jdbcType=INTEGER},
+      </if>
+      <if test="noStatisfactionNum != null" >
+        #{noStatisfactionNum,jdbcType=INTEGER},
+      </if>
+      <if test="veryNoStatisfactionNum != null" >
+        #{veryNoStatisfactionNum,jdbcType=INTEGER},
+      </if>
+      <if test="createTime != null" >
+        #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="createDay != null" >
+        #{createDay,jdbcType=VARCHAR},
+      </if>
+      <if test="state != null" >
+        #{state,jdbcType=INTEGER},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.cmos.scrs.beans.satisfaction.SatisfactionReport" >
+    update scrs_satisfaction_report
+    <set >
+      <if test="starttime != null" >
+        startTime = #{starttime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="endtime != null" >
+        endTime = #{endtime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="tennatId != null" >
+        tennat_id = #{tennatId,jdbcType=VARCHAR},
+      </if>
+      <if test="agentId != null" >
+        agent_id = #{agentId,jdbcType=VARCHAR},
+      </if>
+      <if test="agentName != null" >
+        agent_name = #{agentName,jdbcType=VARCHAR},
+      </if>
+      <if test="agentCode != null" >
+        agent_code = #{agentCode,jdbcType=VARCHAR},
+      </if>
+      <if test="callType != null" >
+        call_type = #{callType,jdbcType=INTEGER},
+      </if>
+      <if test="orgName != null" >
+        org_name = #{orgName,jdbcType=VARCHAR},
+      </if>
+      <if test="callInNum != null" >
+        call_in_num = #{callInNum,jdbcType=INTEGER},
+      </if>
+      <if test="callOutNum != null" >
+        call_out_num = #{callOutNum,jdbcType=INTEGER},
+      </if>
+      <if test="participateInNum != null" >
+        participate_in_num = #{participateInNum,jdbcType=INTEGER},
+      </if>
+      <if test="relativeStatisfactionNum != null" >
+        relative_statisfaction_num = #{relativeStatisfactionNum,jdbcType=INTEGER},
+      </if>
+      <if test="relativeNoStatisfactionNum != null" >
+        relative_no_statisfaction_num = #{relativeNoStatisfactionNum,jdbcType=INTEGER},
+      </if>
+      <if test="veryStatisfactionNum != null" >
+        very_statisfaction_num = #{veryStatisfactionNum,jdbcType=INTEGER},
+      </if>
+      <if test="statisfactionNum != null" >
+        statisfaction_num = #{statisfactionNum,jdbcType=INTEGER},
+      </if>
+      <if test="generalStatisfactionNum != null" >
+        general_statisfaction_num = #{generalStatisfactionNum,jdbcType=INTEGER},
+      </if>
+      <if test="noStatisfactionNum != null" >
+        no_statisfaction_num = #{noStatisfactionNum,jdbcType=INTEGER},
+      </if>
+      <if test="veryNoStatisfactionNum != null" >
+        very_no_statisfaction_num = #{veryNoStatisfactionNum,jdbcType=INTEGER},
+      </if>
+      <if test="createTime != null" >
+        create_time = #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="createDay != null" >
+        create_day = #{createDay,jdbcType=VARCHAR},
+      </if>
+      <if test="state != null" >
+        state = #{state,jdbcType=INTEGER},
+      </if>
+    </set>
+    where row_id = #{rowId,jdbcType=VARCHAR}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.cmos.scrs.beans.satisfaction.SatisfactionReport" >
+    update scrs_satisfaction_report
+    set startTime = #{starttime,jdbcType=TIMESTAMP},
+      endTime = #{endtime,jdbcType=TIMESTAMP},
+      tennat_id = #{tennatId,jdbcType=VARCHAR},
+      agent_id = #{agentId,jdbcType=VARCHAR},
+      agent_name = #{agentName,jdbcType=VARCHAR},
+      agent_code = #{agentCode,jdbcType=VARCHAR},
+      call_type = #{callType,jdbcType=INTEGER},
+      org_name = #{orgName,jdbcType=VARCHAR},
+      call_in_num = #{callInNum,jdbcType=INTEGER},
+      call_out_num = #{callOutNum,jdbcType=INTEGER},
+      participate_in_num = #{participateInNum,jdbcType=INTEGER},
+      relative_statisfaction_num = #{relativeStatisfactionNum,jdbcType=INTEGER},
+      relative_no_statisfaction_num = #{relativeNoStatisfactionNum,jdbcType=INTEGER},
+      very_statisfaction_num = #{veryStatisfactionNum,jdbcType=INTEGER},
+      statisfaction_num = #{statisfactionNum,jdbcType=INTEGER},
+      general_statisfaction_num = #{generalStatisfactionNum,jdbcType=INTEGER},
+      no_statisfaction_num = #{noStatisfactionNum,jdbcType=INTEGER},
+      very_no_statisfaction_num = #{veryNoStatisfactionNum,jdbcType=INTEGER},
+      create_time = #{createTime,jdbcType=TIMESTAMP},
+      create_day = #{createDay,jdbcType=VARCHAR},
+      state = #{state,jdbcType=INTEGER}
+    where row_id = #{rowId,jdbcType=VARCHAR}
+  </update>
+</mapper>
