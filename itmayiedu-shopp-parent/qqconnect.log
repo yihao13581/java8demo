@@ -1,0 +1,133 @@
+0    DEBUG [2019-12-19 17:14:07]  Couldn't find template in cache for "login.ftl"("zh_CN", UTF-8, parsed); will try to load it.
+2    DEBUG [2019-12-19 17:14:07]  TemplateLoader.findTemplateSource("login_zh_CN.ftl"): Not found
+3    DEBUG [2019-12-19 17:14:07]  TemplateLoader.findTemplateSource("login_zh.ftl"): Not found
+4    DEBUG [2019-12-19 17:14:07]  TemplateLoader.findTemplateSource("login.ftl"): Found
+5    DEBUG [2019-12-19 17:14:07]  Loading template for "login.ftl"("zh_CN", UTF-8, parsed) from "D:\\study\\itmayiedu-shopp-parent\\itmayiedu-shopp-pc-web\\target\\classes\\templates\\login.ftl"
+38   DEBUG [2019-12-19 17:14:07]  "login.ftl"("zh_CN", UTF-8, parsed) cached copy not yet stale; using cached.
+25270 DEBUG [2019-12-19 17:14:32]  TemplateLoader.findTemplateSource("login_zh_CN.ftl"): Not found
+25271 DEBUG [2019-12-19 17:14:32]  TemplateLoader.findTemplateSource("login_zh.ftl"): Not found
+25271 DEBUG [2019-12-19 17:14:32]  TemplateLoader.findTemplateSource("login.ftl"): Found
+25271 DEBUG [2019-12-19 17:14:32]  "login.ftl"("zh_CN", UTF-8, parsed): using cached since D:\study\itmayiedu-shopp-parent\itmayiedu-shopp-pc-web\target\classes\templates\login.ftl hasn't changed.
+25273 DEBUG [2019-12-19 17:14:32]  Couldn't find template in cache for "login.html.ftl"("zh_CN", UTF-8, parsed); will try to load it.
+25274 DEBUG [2019-12-19 17:14:32]  TemplateLoader.findTemplateSource("login.html_zh_CN.ftl"): Not found
+25275 DEBUG [2019-12-19 17:14:32]  TemplateLoader.findTemplateSource("login.html_zh.ftl"): Not found
+25275 DEBUG [2019-12-19 17:14:32]  TemplateLoader.findTemplateSource("login.html.ftl"): Not found
+25276 DEBUG [2019-12-19 17:14:32]  "login.ftl"("zh_CN", UTF-8, parsed) cached copy not yet stale; using cached.
+28998 DEBUG [2019-12-19 17:14:36]  Couldn't find template in cache for "register.ftl"("zh_CN", UTF-8, parsed); will try to load it.
+28999 DEBUG [2019-12-19 17:14:36]  TemplateLoader.findTemplateSource("register_zh_CN.ftl"): Not found
+28999 DEBUG [2019-12-19 17:14:36]  TemplateLoader.findTemplateSource("register_zh.ftl"): Not found
+28999 DEBUG [2019-12-19 17:14:36]  TemplateLoader.findTemplateSource("register.ftl"): Found
+28999 DEBUG [2019-12-19 17:14:36]  Loading template for "register.ftl"("zh_CN", UTF-8, parsed) from "D:\\study\\itmayiedu-shopp-parent\\itmayiedu-shopp-pc-web\\target\\classes\\templates\\register.ftl"
+29008 DEBUG [2019-12-19 17:14:36]  Couldn't find template in cache for "register.html.ftl"("zh_CN", UTF-8, parsed); will try to load it.
+29009 DEBUG [2019-12-19 17:14:36]  TemplateLoader.findTemplateSource("register.html_zh_CN.ftl"): Not found
+29009 DEBUG [2019-12-19 17:14:36]  TemplateLoader.findTemplateSource("register.html_zh.ftl"): Not found
+29009 DEBUG [2019-12-19 17:14:36]  TemplateLoader.findTemplateSource("register.html.ftl"): Not found
+29009 DEBUG [2019-12-19 17:14:36]  "register.ftl"("zh_CN", UTF-8, parsed) cached copy not yet stale; using cached.
+95874 DEBUG [2019-12-19 17:15:43]  TemplateLoader.findTemplateSource("login_zh_CN.ftl"): Not found
+95874 DEBUG [2019-12-19 17:15:43]  TemplateLoader.findTemplateSource("login_zh.ftl"): Not found
+95874 DEBUG [2019-12-19 17:15:43]  TemplateLoader.findTemplateSource("login.ftl"): Found
+95875 DEBUG [2019-12-19 17:15:43]  "login.ftl"("zh_CN", UTF-8, parsed): using cached since D:\study\itmayiedu-shopp-parent\itmayiedu-shopp-pc-web\target\classes\templates\login.ftl hasn't changed.
+95876 DEBUG [2019-12-19 17:15:43]  TemplateLoader.findTemplateSource("login.html_zh_CN.ftl"): Not found
+95876 DEBUG [2019-12-19 17:15:43]  TemplateLoader.findTemplateSource("login.html_zh.ftl"): Not found
+95876 DEBUG [2019-12-19 17:15:43]  TemplateLoader.findTemplateSource("login.html.ftl"): Not found
+95876 DEBUG [2019-12-19 17:15:43]  "login.html.ftl"("zh_CN", UTF-8, parsed) no source found.
+95877 DEBUG [2019-12-19 17:15:43]  "login.ftl"("zh_CN", UTF-8, parsed) cached copy not yet stale; using cached.
+104213 DEBUG [2019-12-19 17:15:51]  Couldn't find template in cache for "index.ftl"("zh_CN", UTF-8, parsed); will try to load it.
+104214 DEBUG [2019-12-19 17:15:51]  TemplateLoader.findTemplateSource("index_zh_CN.ftl"): Not found
+104214 DEBUG [2019-12-19 17:15:51]  TemplateLoader.findTemplateSource("index_zh.ftl"): Not found
+104214 DEBUG [2019-12-19 17:15:51]  TemplateLoader.findTemplateSource("index.ftl"): Found
+104214 DEBUG [2019-12-19 17:15:51]  Loading template for "index.ftl"("zh_CN", UTF-8, parsed) from "D:\\study\\itmayiedu-shopp-parent\\itmayiedu-shopp-pc-web\\target\\classes\\templates\\index.ftl"
+104216 DEBUG [2019-12-19 17:15:51]  Couldn't find template in cache for "index.html.ftl"("zh_CN", UTF-8, parsed); will try to load it.
+104217 DEBUG [2019-12-19 17:15:51]  TemplateLoader.findTemplateSource("index.html_zh_CN.ftl"): Not found
+104217 DEBUG [2019-12-19 17:15:51]  TemplateLoader.findTemplateSource("index.html_zh.ftl"): Not found
+104217 DEBUG [2019-12-19 17:15:51]  TemplateLoader.findTemplateSource("index.html.ftl"): Not found
+104218 DEBUG [2019-12-19 17:15:51]  "index.ftl"("zh_CN", UTF-8, parsed) cached copy not yet stale; using cached.
+374292 DEBUG [2019-12-19 17:20:21]  TemplateLoader.findTemplateSource("login_zh_CN.ftl"): Not found
+374293 DEBUG [2019-12-19 17:20:21]  TemplateLoader.findTemplateSource("login_zh.ftl"): Not found
+374293 DEBUG [2019-12-19 17:20:21]  TemplateLoader.findTemplateSource("login.ftl"): Found
+374293 DEBUG [2019-12-19 17:20:21]  "login.ftl"("zh_CN", UTF-8, parsed): using cached since D:\study\itmayiedu-shopp-parent\itmayiedu-shopp-pc-web\target\classes\templates\login.ftl hasn't changed.
+374294 DEBUG [2019-12-19 17:20:21]  TemplateLoader.findTemplateSource("login.html_zh_CN.ftl"): Not found
+374295 DEBUG [2019-12-19 17:20:21]  TemplateLoader.findTemplateSource("login.html_zh.ftl"): Not found
+374295 DEBUG [2019-12-19 17:20:21]  TemplateLoader.findTemplateSource("login.html.ftl"): Not found
+374295 DEBUG [2019-12-19 17:20:21]  "login.html.ftl"("zh_CN", UTF-8, parsed) no source found.
+374295 DEBUG [2019-12-19 17:20:21]  "login.ftl"("zh_CN", UTF-8, parsed) cached copy not yet stale; using cached.
+384748 DEBUG [2019-12-19 17:20:32]  TemplateLoader.findTemplateSource("index_zh_CN.ftl"): Not found
+384748 DEBUG [2019-12-19 17:20:32]  TemplateLoader.findTemplateSource("index_zh.ftl"): Not found
+384748 DEBUG [2019-12-19 17:20:32]  TemplateLoader.findTemplateSource("index.ftl"): Found
+384749 DEBUG [2019-12-19 17:20:32]  "index.ftl"("zh_CN", UTF-8, parsed): using cached since D:\study\itmayiedu-shopp-parent\itmayiedu-shopp-pc-web\target\classes\templates\index.ftl hasn't changed.
+384750 DEBUG [2019-12-19 17:20:32]  TemplateLoader.findTemplateSource("index.html_zh_CN.ftl"): Not found
+384750 DEBUG [2019-12-19 17:20:32]  TemplateLoader.findTemplateSource("index.html_zh.ftl"): Not found
+384750 DEBUG [2019-12-19 17:20:32]  TemplateLoader.findTemplateSource("index.html.ftl"): Not found
+384750 DEBUG [2019-12-19 17:20:32]  "index.html.ftl"("zh_CN", UTF-8, parsed) no source found.
+384750 DEBUG [2019-12-19 17:20:32]  "index.ftl"("zh_CN", UTF-8, parsed) cached copy not yet stale; using cached.
+390441 DEBUG [2019-12-19 17:20:38]  TemplateLoader.findTemplateSource("login_zh_CN.ftl"): Not found
+390441 DEBUG [2019-12-19 17:20:38]  TemplateLoader.findTemplateSource("login_zh.ftl"): Not found
+390441 DEBUG [2019-12-19 17:20:38]  TemplateLoader.findTemplateSource("login.ftl"): Found
+390442 DEBUG [2019-12-19 17:20:38]  "login.ftl"("zh_CN", UTF-8, parsed): using cached since D:\study\itmayiedu-shopp-parent\itmayiedu-shopp-pc-web\target\classes\templates\login.ftl hasn't changed.
+390443 DEBUG [2019-12-19 17:20:38]  TemplateLoader.findTemplateSource("login.html_zh_CN.ftl"): Not found
+390443 DEBUG [2019-12-19 17:20:38]  TemplateLoader.findTemplateSource("login.html_zh.ftl"): Not found
+390443 DEBUG [2019-12-19 17:20:38]  TemplateLoader.findTemplateSource("login.html.ftl"): Not found
+390443 DEBUG [2019-12-19 17:20:38]  "login.html.ftl"("zh_CN", UTF-8, parsed) no source found.
+390444 DEBUG [2019-12-19 17:20:38]  "login.ftl"("zh_CN", UTF-8, parsed) cached copy not yet stale; using cached.
+1076877 DEBUG [2019-12-19 17:32:04]  TemplateLoader.findTemplateSource("index_zh_CN.ftl"): Not found
+1076877 DEBUG [2019-12-19 17:32:04]  TemplateLoader.findTemplateSource("index_zh.ftl"): Not found
+1076877 DEBUG [2019-12-19 17:32:04]  TemplateLoader.findTemplateSource("index.ftl"): Found
+1076878 DEBUG [2019-12-19 17:32:04]  "index.ftl"("zh_CN", UTF-8, parsed): using cached since D:\study\itmayiedu-shopp-parent\itmayiedu-shopp-pc-web\target\classes\templates\index.ftl hasn't changed.
+1076879 DEBUG [2019-12-19 17:32:04]  TemplateLoader.findTemplateSource("index.html_zh_CN.ftl"): Not found
+1076879 DEBUG [2019-12-19 17:32:04]  TemplateLoader.findTemplateSource("index.html_zh.ftl"): Not found
+1076879 DEBUG [2019-12-19 17:32:04]  TemplateLoader.findTemplateSource("index.html.ftl"): Not found
+1076879 DEBUG [2019-12-19 17:32:04]  "index.html.ftl"("zh_CN", UTF-8, parsed) no source found.
+1076880 DEBUG [2019-12-19 17:32:04]  "index.ftl"("zh_CN", UTF-8, parsed) cached copy not yet stale; using cached.
+1085354 DEBUG [2019-12-19 17:32:12]  TemplateLoader.findTemplateSource("login_zh_CN.ftl"): Not found
+1085354 DEBUG [2019-12-19 17:32:12]  TemplateLoader.findTemplateSource("login_zh.ftl"): Not found
+1085354 DEBUG [2019-12-19 17:32:12]  TemplateLoader.findTemplateSource("login.ftl"): Found
+1085354 DEBUG [2019-12-19 17:32:12]  "login.ftl"("zh_CN", UTF-8, parsed): using cached since D:\study\itmayiedu-shopp-parent\itmayiedu-shopp-pc-web\target\classes\templates\login.ftl hasn't changed.
+1085355 DEBUG [2019-12-19 17:32:12]  TemplateLoader.findTemplateSource("login.html_zh_CN.ftl"): Not found
+1085356 DEBUG [2019-12-19 17:32:12]  TemplateLoader.findTemplateSource("login.html_zh.ftl"): Not found
+1085356 DEBUG [2019-12-19 17:32:12]  TemplateLoader.findTemplateSource("login.html.ftl"): Not found
+1085356 DEBUG [2019-12-19 17:32:12]  "login.html.ftl"("zh_CN", UTF-8, parsed) no source found.
+1085356 DEBUG [2019-12-19 17:32:12]  "login.ftl"("zh_CN", UTF-8, parsed) cached copy not yet stale; using cached.
+2188152 DEBUG [2019-12-19 17:50:35]  TemplateLoader.findTemplateSource("login_zh_CN.ftl"): Not found
+2188152 DEBUG [2019-12-19 17:50:35]  TemplateLoader.findTemplateSource("login_zh.ftl"): Not found
+2188153 DEBUG [2019-12-19 17:50:35]  TemplateLoader.findTemplateSource("login.ftl"): Found
+2188153 DEBUG [2019-12-19 17:50:35]  "login.ftl"("zh_CN", UTF-8, parsed): using cached since D:\study\itmayiedu-shopp-parent\itmayiedu-shopp-pc-web\target\classes\templates\login.ftl hasn't changed.
+2188154 DEBUG [2019-12-19 17:50:35]  TemplateLoader.findTemplateSource("login.html_zh_CN.ftl"): Not found
+2188155 DEBUG [2019-12-19 17:50:35]  TemplateLoader.findTemplateSource("login.html_zh.ftl"): Not found
+2188155 DEBUG [2019-12-19 17:50:35]  TemplateLoader.findTemplateSource("login.html.ftl"): Not found
+2188155 DEBUG [2019-12-19 17:50:35]  "login.html.ftl"("zh_CN", UTF-8, parsed) no source found.
+2188155 DEBUG [2019-12-19 17:50:35]  "login.ftl"("zh_CN", UTF-8, parsed) cached copy not yet stale; using cached.
+2190227 DEBUG [2019-12-19 17:50:37]  TemplateLoader.findTemplateSource("register_zh_CN.ftl"): Not found
+2190227 DEBUG [2019-12-19 17:50:37]  TemplateLoader.findTemplateSource("register_zh.ftl"): Not found
+2190227 DEBUG [2019-12-19 17:50:37]  TemplateLoader.findTemplateSource("register.ftl"): Found
+2190227 DEBUG [2019-12-19 17:50:37]  "register.ftl"("zh_CN", UTF-8, parsed): using cached since D:\study\itmayiedu-shopp-parent\itmayiedu-shopp-pc-web\target\classes\templates\register.ftl hasn't changed.
+2190228 DEBUG [2019-12-19 17:50:37]  TemplateLoader.findTemplateSource("register.html_zh_CN.ftl"): Not found
+2190228 DEBUG [2019-12-19 17:50:37]  TemplateLoader.findTemplateSource("register.html_zh.ftl"): Not found
+2190229 DEBUG [2019-12-19 17:50:37]  TemplateLoader.findTemplateSource("register.html.ftl"): Not found
+2190229 DEBUG [2019-12-19 17:50:37]  "register.html.ftl"("zh_CN", UTF-8, parsed) no source found.
+2190229 DEBUG [2019-12-19 17:50:37]  "register.ftl"("zh_CN", UTF-8, parsed) cached copy not yet stale; using cached.
+2285684 DEBUG [2019-12-19 17:52:13]  Couldn't find template in cache for "error.ftl"("zh_CN", UTF-8, parsed); will try to load it.
+2285684 DEBUG [2019-12-19 17:52:13]  TemplateLoader.findTemplateSource("error_zh_CN.ftl"): Not found
+2285685 DEBUG [2019-12-19 17:52:13]  TemplateLoader.findTemplateSource("error_zh.ftl"): Not found
+2285685 DEBUG [2019-12-19 17:52:13]  TemplateLoader.findTemplateSource("error.ftl"): Not found
+2285687 DEBUG [2019-12-19 17:52:13]  Couldn't find template in cache for "error.html.ftl"("zh_CN", UTF-8, parsed); will try to load it.
+2285687 DEBUG [2019-12-19 17:52:13]  TemplateLoader.findTemplateSource("error.html_zh_CN.ftl"): Not found
+2285687 DEBUG [2019-12-19 17:52:13]  TemplateLoader.findTemplateSource("error.html_zh.ftl"): Not found
+2285687 DEBUG [2019-12-19 17:52:13]  TemplateLoader.findTemplateSource("error.html.ftl"): Not found
+2762714 DEBUG [2019-12-19 18:00:10]  TemplateLoader.findTemplateSource("register_zh_CN.ftl"): Not found
+2762715 DEBUG [2019-12-19 18:00:10]  TemplateLoader.findTemplateSource("register_zh.ftl"): Not found
+2762715 DEBUG [2019-12-19 18:00:10]  TemplateLoader.findTemplateSource("register.ftl"): Found
+2762715 DEBUG [2019-12-19 18:00:10]  "register.ftl"("zh_CN", UTF-8, parsed): using cached since D:\study\itmayiedu-shopp-parent\itmayiedu-shopp-pc-web\target\classes\templates\register.ftl hasn't changed.
+2762717 DEBUG [2019-12-19 18:00:10]  TemplateLoader.findTemplateSource("register.html_zh_CN.ftl"): Not found
+2762717 DEBUG [2019-12-19 18:00:10]  TemplateLoader.findTemplateSource("register.html_zh.ftl"): Not found
+2762717 DEBUG [2019-12-19 18:00:10]  TemplateLoader.findTemplateSource("register.html.ftl"): Not found
+2762717 DEBUG [2019-12-19 18:00:10]  "register.html.ftl"("zh_CN", UTF-8, parsed) no source found.
+2762718 DEBUG [2019-12-19 18:00:10]  "register.ftl"("zh_CN", UTF-8, parsed) cached copy not yet stale; using cached.
+2786351 DEBUG [2019-12-19 18:00:33]  TemplateLoader.findTemplateSource("login_zh_CN.ftl"): Not found
+2786352 DEBUG [2019-12-19 18:00:33]  TemplateLoader.findTemplateSource("login_zh.ftl"): Not found
+2786352 DEBUG [2019-12-19 18:00:33]  TemplateLoader.findTemplateSource("login.ftl"): Found
+2786352 DEBUG [2019-12-19 18:00:33]  "login.ftl"("zh_CN", UTF-8, parsed): using cached since D:\study\itmayiedu-shopp-parent\itmayiedu-shopp-pc-web\target\classes\templates\login.ftl hasn't changed.
+2786353 DEBUG [2019-12-19 18:00:33]  TemplateLoader.findTemplateSource("login.html_zh_CN.ftl"): Not found
+2786354 DEBUG [2019-12-19 18:00:33]  TemplateLoader.findTemplateSource("login.html_zh.ftl"): Not found
+2786354 DEBUG [2019-12-19 18:00:33]  TemplateLoader.findTemplateSource("login.html.ftl"): Not found
+2786354 DEBUG [2019-12-19 18:00:33]  "login.html.ftl"("zh_CN", UTF-8, parsed) no source found.
+2786354 DEBUG [2019-12-19 18:00:33]  "login.ftl"("zh_CN", UTF-8, parsed) cached copy not yet stale; using cached.

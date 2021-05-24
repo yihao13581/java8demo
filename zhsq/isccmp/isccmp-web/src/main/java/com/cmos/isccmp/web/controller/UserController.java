@@ -1,5 +1,7 @@
 package com.cmos.isccmp.web.controller;
 
+
+
 /**
  * @CLassName UserController
  * @Description: TODO
@@ -9,6 +11,8 @@ package com.cmos.isccmp.web.controller;
 //@RestController
 //@Api(description="用户管理")
 //@RequestMapping("/user")
-public class UserController  extends BaseController{
 
+//@Slf4j
+public class UserController  extends BaseController{
+//    private static final Logger log=LoggerFactory.getLogger(UserController.class);
 }

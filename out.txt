@@ -1,2 +1,0 @@
-普通字符串
-com.it.java8demo.javabase.io.IODemo@30dae81
